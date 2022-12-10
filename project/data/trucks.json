@@ -2,25 +2,19 @@
   {
     "id": 1,
     "name": "Renault Magnum",
-    "driver": {
-    "id": ""
-    },
+    "driver": {},
     "state": "base"
   },
   {
     "id": 2,
     "name": "Volvo FH12",
-    "driver": {
-      "id": ""
-    },
+    "driver": {},
     "state": "base"
   },
   {
     "id": 3,
     "name": "DAF XF",
-    "driver": {
-      "id": ""
-    },
+    "driver": {},
     "state": "base"
   }
 ]

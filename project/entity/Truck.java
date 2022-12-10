@@ -5,46 +5,32 @@ import project.state.OnRepair;
 import project.state.OnRoute;
 import project.state.State;
 
+import java.util.Objects;
+
 public class Truck {
     protected int id;
     protected String name;
-    protected String driver;
+    protected Driver driver;
     protected String state;
     protected transient State currentState;
 
-    public Truck (int id, String name, String driver, String state){
+    public Truck (int id, String name, Driver driver, String state){
         this.id = id;
         this.name = name;
         this.driver = driver;
         this.state = state;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDriver() {
+    public Driver getDriver() {
         return driver;
     }
 
-    public void setDriver(String driver) {
+    public void setDriver(Driver driver) {
         this.driver = driver;
-    }
-
-    public String getState() {
-        return state;
     }
 
     public void setState(String state) {
@@ -66,6 +52,6 @@ public class Truck {
 
     @Override
     public String toString() {
-        return String.format(" %s | %-14s | %-7s| %-6s", id, name, driver, "On base");
+        return String.format(" %s | %-14s | %-6s | %-6s", id, name, Objects.requireNonNullElse(driver.name, ""), state);
     }
 }

@@ -1,4 +1,4 @@
 package project.exception;
 
-public class StateException extends Exception{
+public class StateException extends RuntimeException{
 }

@@ -2,19 +2,19 @@
   {
     "id": 1,
     "name": "Joe",
-    "isBusy": false
+    "truck": {}
   },
 
   {
     "id": 2,
     "name": "Drake",
-    "isBusy": false
+    "truck": {}
   },
 
   {
     "id": 3,
     "name": "Steve",
-    "isBusy": false
+    "truck": {}
   }
 ]
 
